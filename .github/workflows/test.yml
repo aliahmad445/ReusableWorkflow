@@ -25,4 +25,6 @@ jobs:
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Tux
       - name: "check is MY_SECRET exists"
         if: ${{ env.HAVE_MASCOT_TOKEN == 'true' }}
-        run: echo "I have the token!"
+        run: echo ${{secrets.MASCOT_TOKEN}}
+        if: ${{ env.HAVE_MASCOT_TOKEN == 'false' }}
+        run: echo ${{env.mascot}}
