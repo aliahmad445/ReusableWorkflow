@@ -19,7 +19,7 @@ jobs:
   linux_job:
     runs-on: ubuntu-latest
     env:
-      mascot: http://www.123.com
+      MASCOT_TOKEN: http://www.123.com
       HAVE_MASCOT_TOKEN: ${{ secrets.MASCOT_TOKEN != '' }}
     steps:
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Tux
