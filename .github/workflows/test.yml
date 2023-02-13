@@ -20,5 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       mascot: Tux
+      HAVE_MASCOT_TOKEN: ${{ secrets.MASCOT_TOKEN != '' }}
     steps:
       - run: echo 'Hi ${{ env.mascot }}'  # Hi Tux
+      - name: "check is MY_SECRET exists"
+        if: ${{ env.HAVE_MASCOT_TOKEN == 'true' }}
+        run: echo "I have the token!"
