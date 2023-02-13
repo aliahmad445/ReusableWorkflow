@@ -1,6 +1,9 @@
 name: Hi 
 on: 
  workflow_call:
+   secrets:
+     MASCOT_TOKEN:
+       required: true
 env:
   mascot: Mona
   super_duper_var: totally_awesome
