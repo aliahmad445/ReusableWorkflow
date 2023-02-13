@@ -3,7 +3,7 @@ on:
  workflow_call:
    secrets:
      MASCOT_TOKEN:
-       required: true
+       required: false
 env:
   mascot: Mona
   super_duper_var: totally_awesome
