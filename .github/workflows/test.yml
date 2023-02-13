@@ -26,5 +26,6 @@ jobs:
       - name: "check is MY_SECRET exists"
         if: ${{ env.HAVE_MASCOT_TOKEN == 'true' }}
         run: echo ${{secrets.MASCOT_TOKEN}}
+      - name: "check is Seccret is not passed"   
         if: ${{ env.HAVE_MASCOT_TOKEN == 'false' }}
         run: echo ${{env.mascot}}
