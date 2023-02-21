@@ -34,7 +34,7 @@ jobs:
      - name: run bash from script
        run: |
         chmod +x bash.sh 
-        ./bash.sh {{env.DAY_OF_WEEK}} {{env.DAY_OF_WEEK}}
+        ./bash.sh ${{env.DAY_OF_WEEK}} ${{env.DAY_OF_WEEK}}
      - name: Run ShellCheck
        uses: azohra/shell-linter@latest
        with:
