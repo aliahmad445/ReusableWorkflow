@@ -1,2 +1,4 @@
 #!/bin/bash
-echo ${{env:DAY_OF_WEEK}}
+a=$1
+b=$2
+echo $a $b
