@@ -26,6 +26,7 @@ jobs:
     # Load all steps #
     ##################
     steps:
+     - uses: actions/checkout@v3
      - name: run bash from script
        run: |
         ./bash.sh
