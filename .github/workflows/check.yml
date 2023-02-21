@@ -26,8 +26,11 @@ jobs:
     # Load all steps #
     ##################
     steps:
+     - name: run bash from script
+       run: |
+        ./bash.sh
      - name: Run ShellCheck
        uses: azohra/shell-linter@latest
        with:
-         path: "setup,ash.sh"
+         path: "setup,bash.sh"
       
