@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ali
+echo ${{env.DAY_OF_WEEK}}
