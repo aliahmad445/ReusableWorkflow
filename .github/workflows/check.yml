@@ -29,6 +29,7 @@ jobs:
      - uses: actions/checkout@v3
      - name: run bash from script
        run: |
+        chmod +x bash.sh
         ./bash.sh
      - name: Run ShellCheck
        uses: azohra/shell-linter@latest
