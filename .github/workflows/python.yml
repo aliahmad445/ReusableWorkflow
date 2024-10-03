@@ -5,13 +5,11 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest 
     strategy:
       matrix:
         python-version: [3.6.15, 3.7.12, 3.8.12, 3.9.9, 3.10.1]
- 
-   steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Install pyenv
       run: |
