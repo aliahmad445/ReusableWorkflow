@@ -14,5 +14,6 @@ jobs:
          python-version: '3.9' 
       - run: |
          python --version
+         ls -ltr
          python test.py
       
