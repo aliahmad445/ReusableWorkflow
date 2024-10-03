@@ -15,5 +15,5 @@ jobs:
       - run: |
          python --version
          ls -ltr
-         python test.py
+         python Test.py
       
